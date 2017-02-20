@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Wardrobe.Models.Closet>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Outfits</h2>
+
+<p>
+    @Html.ActionLink("Create a New Outfit", "Create")
+</p>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 col-sm-3">
+            <div class="thumbnail">
+                <div class="caption">
+                    <img class="imgSize" src="@Url.Content(item.Top.Photo)" />
+                    <img class="imgSize" src="@Url.Content(item.Bottom.Photo)" />
+                    <img class="imgSize" src="@Url.Content(item.Sho.Photo)" />
+                    <img class="imgSize" src="@Url.Content(item.Accessory.Photo)" />
+                    <br><br>
+                    <p>@Html.ActionLink("Edit", "Edit", new { id = item.ClosetID }, new { @class = "btn btn-primary", role = "button" })
+                    @Html.ActionLink("Details", "Details", new { id = item.ClosetID }, new { @class = "btn btn-primary", role = "button" })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ClosetID }, new { @class = "btn btn-primary", role = "button" })</p>
+                    
+                </div>
+            </div>
+        </div>
+    }
+</div>

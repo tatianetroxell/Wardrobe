@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <p class="lead">Get Inspired and Create New Outfits</p>
+    <div class="row">
+        <div class="col-md-3">
+            <img src="~/Content/Top5.jpg" />
+            <p class="btn btn-default">@Html.ActionLink("Tops", "Index", "Tops")</p>
+        </div>
+        <div class="col-md-3">
+            <img src="~/Content/bottom4.jpg" />
+            <p class="btn btn-default">@Html.ActionLink("Bottoms", "Index", "Bottoms")</p>
+        </div>
+        <div class="col-md-3">
+            <img src="~/Content/shoe2.jpg" />
+            <p class="btn btn-default">@Html.ActionLink("Shoes", "Index", "Shoes")</p>
+        </div>
+        <div class="col-md-3">
+            <img src="~/Content/accessory4.jpg" />
+            <p class="btn btn-default">@Html.ActionLink("Accessories", "Index", "Accessories")</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+﻿@model Wardrobe.Models.Closet
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Outfit</h4>
+    <hr />
+
+    <div class="jumbotron" id="details">
+        <div class="thumbnail">
+            <div class="caption">
+                <img src="@Url.Content(Model.Top.Photo)" />
+                <img src="@Url.Content(Model.Bottom.Photo)" />
+                <img src="@Url.Content(Model.Sho.Photo)" />
+                <img src="@Url.Content(Model.Accessory.Photo)" />
+                <br><br>
+                <p>
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.ClosetID }, new { @class = "btn btn-primary", role = "button" })
+                    @Html.ActionLink("Back to List", "Index", new { id = Model.ClosetID }, new { @class = "btn btn-primary", role = "button" })
+                </p>
+                <br><br>
+            </div>
+        </div>
+    </div>
+</div>

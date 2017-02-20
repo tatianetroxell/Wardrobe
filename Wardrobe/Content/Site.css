@@ -1,0 +1,130 @@
+﻿body {
+    padding-top: 50px;
+    background-image: url('MaroonBackground.jpg');
+    color: #FFFFFF;
+
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 100px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/*Navigation Bar*/
+.logo {
+    background: url('fashionRoomLogo.png') no-repeat top left;
+    display: block;
+    width: 110px;
+    height: 110px;
+    text-indent: -9999px; /* hides the link text */
+}
+
+.navbar {
+    background-color: #FFFFFF;
+}
+
+#nav-menu a {
+    margin-top: 35px;
+    color: #990000;
+    font-family: 'Satisfy', cursive;
+}
+
+#nav-menu a:hover {
+    color: #ff4d4d;
+}
+
+.navbar .navbar-nav {
+    font-size: 30px;
+    display: inline-block;
+    float: none;
+    vertical-align: text-bottom;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+/*Button NavBar Collapse*/
+span.icon-bar {
+    border: 1px solid #990000;
+}
+
+/*Main Content- Home Index*/
+.jumbotron {
+    color: #990000;
+    text-align: center;
+}
+
+.lead {
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+}
+
+.btn-default {
+    background-color: #990000;
+    font-size: 20px;
+}
+
+.btn-default a {
+    color: #FFFFFF;
+}
+
+.btn-default a:hover{
+    color: #990000;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*Accessories, Bottoms, Shoes, Tops - Index*/
+.thumbnail {
+    text-align: center;
+}
+
+.thumbnail p {
+    color: #990000;
+}
+
+.btn-primary {
+    background-color: #990000;
+}
+
+.btn-primary:hover{
+    color: #990000;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+
+.imgSize {
+    width: 50%;
+}
+
+/*Accessories, Bottoms, Shoes, Tops - Details*/
+#details {
+    font-size: 16px;
+}
+
+/*Footer*/
+.container-fluid {
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+}

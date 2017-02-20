@@ -1,0 +1,34 @@
+﻿@model Wardrobe.Models.Bottom
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <hr />
+    <div class="jumbotron" id="details">
+        <div class="thumbnail">
+            <div class="caption">
+                <img src="@Url.Content(Model.Photo)" />
+                <p><strong>@Html.DisplayNameFor(model => model.Name):</strong>&nbsp;@Html.DisplayFor(model => model.Name)</p>
+                <p><strong>@Html.DisplayNameFor(model => model.Color):</strong>&nbsp;@Html.DisplayFor(model => model.Color)</p>
+                <p><strong>@Html.DisplayNameFor(model => model.Season):</strong>&nbsp;@Html.DisplayFor(model => model.Season)</p>
+                <p><strong>@Html.DisplayNameFor(model => model.Occasion):</strong>&nbsp;@Html.DisplayFor(model => model.Occasion)</p>
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-actions no-color">
+                        <input type="submit" value="Delete" class="btn btn-primary" />
+                        @Html.ActionLink("Back to List", "Index", new { id = Model.BottomID }, new { @class = "btn btn-primary", role = "button" })
+                    </div>
+                }
+                <br><br>
+            </div>
+        </div>
+    </div>
+</div>

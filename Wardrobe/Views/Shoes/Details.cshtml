@@ -1,0 +1,29 @@
+﻿@model Wardrobe.Models.Sho
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Shoes</h4>
+    <hr />
+    <div class="jumbotron" id="details">
+        <div class="thumbnail">
+            <div class="caption">
+                <img src="@Url.Content(Model.Photo)" />
+                <p><strong>@Html.DisplayNameFor(model => model.Name):</strong>&nbsp;@Html.DisplayFor(model => model.Name)</p>
+                <p><strong>@Html.DisplayNameFor(model => model.Color):</strong>&nbsp;@Html.DisplayFor(model => model.Color)</p>
+                <p><strong>@Html.DisplayNameFor(model => model.Season):</strong>&nbsp;@Html.DisplayFor(model => model.Season)</p>
+                <p><strong>@Html.DisplayNameFor(model => model.Occasion):</strong>&nbsp;@Html.DisplayFor(model => model.Occasion)</p>
+
+                <p>
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.ShoeID }, new { @class = "btn btn-primary", role = "button" })
+                    @Html.ActionLink("Back to List", "Index", new { id = Model.ShoeID }, new { @class = "btn btn-primary", role = "button" })
+                </p>
+                <br><br>
+            </div>
+        </div>
+    </div>
+</div>
